@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Enviar 8 GOLD — Orlando Web Studio</title>
+<style>
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#0d1117;color:#e6edf3;line-height:1.45;padding:16px 14px 60px;max-width:560px;margin:0 auto}
+h1{font-size:20px;margin-bottom:4px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:18px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:14px;padding:16px;margin-bottom:16px}
+.card.done{opacity:.5}
+.n{font-size:12px;color:#7ee787;letter-spacing:.05em;text-transform:uppercase}
+.biz{font-size:17px;font-weight:700;margin:2px 0 2px}
+.prob{font-size:13px;color:#f0883e;margin-bottom:12px}
+.tel{font-size:13px;color:#8b949e;margin-bottom:12px}
+a.btn{display:block;text-align:center;text-decoration:none;font-weight:600;font-size:15px;padding:14px;border-radius:10px;margin-bottom:8px}
+.b1{background:#238636;color:#fff}
+.b2{background:#1f6feb;color:#fff}
+.hint{font-size:12px;color:#6e7681;margin:2px 0 10px}
+.chk{display:flex;align-items:center;gap:8px;font-size:13px;color:#8b949e;margin-top:6px}
+.chk input{width:18px;height:18px}
+.foot{color:#6e7681;font-size:12px;text-align:center;margin-top:20px}
+</style></head><body>
+<h1>📲 Enviar — 8 GOLD</h1>
+<p class="sub">Toca <b>1º texto</b> → Mensagens abre preenchido → você dá enviar. Respondeu? toca <b>2º texto</b>. Espaça os envios. STOP = para.</p>
+<div id="list"></div>
+<p class="foot">Do SEU número, 1 a 1 = warm e legal. Quando responderem depois do 2º, o Wagner assume.</p>
+<script>
+const leads=[
+ {biz:"Robert & Sons Roofing",city:"Kissimmee",tel:"+13213214406",prob:'Site "Não Seguro" no Chrome',
+  m1:"Hey, is this Robert & Sons Roofing?",
+  m2:'Right now your website shows a "Not Secure" warning in Chrome — that little warning next to the web address. It scares off customers and Google ranks it lower. I\'m local, I fix + modernize sites for roofers. Want a quick before/after of yours? Free, no strings.'},
+ {biz:"Deluxe Roof Repair",city:"Kissimmee",tel:"+16898887897",prob:'Site "Não Seguro" no Chrome',
+  m1:"Hey, is this Deluxe Roof Repair?",
+  m2:'Right now your website shows a "Not Secure" warning in Chrome — that warning next to the web address. Scares off customers and hurts your Google ranking. I\'m local, I fix + modernize sites for roofers. Want a quick before/after of yours? Free, no strings.'},
+ {biz:"Deluxe Sanford Roof Repair",city:"Sanford",tel:"+13213279414",prob:'Site "Não Seguro" no Chrome',
+  m1:"Hey, is this Deluxe Roof Repair in Sanford?",
+  m2:'Right now your website shows a "Not Secure" warning in Chrome — that warning by the web address. Spooks customers and hurts your Google ranking. I\'m local, I fix + modernize sites for roofers. Want a quick before/after of yours? Free, no strings.'},
+ {biz:"William's Roofing",city:"Sanford",tel:"+13213216844",prob:'Site "Não Seguro" no Chrome',
+  m1:"Hey, is this William's Roofing?",
+  m2:'Right now your website shows a "Not Secure" warning in Chrome — that warning next to the web address. It scares off customers and Google ranks it lower. I\'m local, I fix + modernize sites for roofers. Want a quick before/after of yours? Free, no strings.'},
+ {biz:"Square Build (remodeling)",city:"Orlando",tel:"+13212766097",prob:'Site "Não Seguro" no Chrome',
+  m1:"Hey, is this Square Build?",
+  m2:'Right now your website shows a "Not Secure" warning in Chrome — that warning by the web address. Customers see it and bounce, and Google ranks it lower. I\'m local, I fix + modernize sites for remodeling companies. Want a quick before/after of yours? Free, no strings.'},
+ {biz:"Beyond Kitchen Designs",city:"Orlando",tel:"+16562224638",prob:'Site "Não Seguro" no Chrome',
+  m1:"Hey, is this Beyond Kitchen Designs?",
+  m2:'Right now your website shows a "Not Secure" warning in Chrome — that warning next to the web address. Scares off customers and hurts your Google ranking. I\'m local, I build clean sites for kitchen/remodel companies. Want a quick before/after of yours? Free, no strings.'},
+ {biz:"Power Roofing & Construction",city:"Kissimmee",tel:"+14075662364",prob:"Site QUEBRADO (erro 500)",
+  m1:"Hey, is this Power Roofing?",
+  m2:"Heads-up — your website's actually down right now, throws an error when you open it. You're probably losing calls to it. I build fast sites for roofers here in Kissimmee — want me to show you a working one for you? Free to look."},
+ {biz:"Covelli Roofing",city:"Sanford",tel:"+14073587193",prob:"Não abre no celular",
+  m1:"Hey, is this Covelli Roofing?",
+  m2:"Quick one — your website doesn't load right on phones (tiny text, buttons off-screen), and 60%+ of your customers are on mobile. I fix that for roofers. Want a 20-sec look at a mobile version of yours? Free."}
+];
+const smsLink=(tel,body)=>`sms:${tel}&body=${encodeURIComponent(body)}`;
+const list=document.getElementById('list');
+leads.forEach((l,i)=>{
+ const key='send8_'+l.tel;
+ const c=document.createElement('div');c.className='card';
+ c.innerHTML=`<div class="n">${i+1} · ${l.city}</div>
+ <div class="biz">${l.biz}</div>
+ <div class="prob">⚠️ ${l.prob}</div>
+ <div class="tel">${l.tel}</div>
+ <a class="btn b1" href="${smsLink(l.tel,l.m1)}">📨 1º texto (confirma)</a>
+ <div class="hint">Só depois que ele responder 👇</div>
+ <a class="btn b2" href="${smsLink(l.tel,l.m2)}">📨 2º texto (o problema + oferta)</a>
+ <label class="chk"><input type="checkbox" ${localStorage.getItem(key)?'checked':''}> mandei / respondeu</label>`;
+ const cb=c.querySelector('input');
+ cb.addEventListener('change',()=>{ if(cb.checked){localStorage.setItem(key,'1');c.classList.add('done');}else{localStorage.removeItem(key);c.classList.remove('done');} });
+ if(localStorage.getItem(key))c.classList.add('done');
+ list.appendChild(c);
+});
+</script>
+</body></html>
