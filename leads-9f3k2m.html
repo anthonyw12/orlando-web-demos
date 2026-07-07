@@ -1,0 +1,170 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Leads sem site · Orlando</title></head><body>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Leads sem site · Orlando</title>
+<style>
+  :root{
+    --bg:#FAFAF8; --card:#FFFFFF; --ink:#17191C; --slate:#5B6470; --faint:#8A929C;
+    --line:#E7E7E1; --teal:#0E7C6B; --teal-dim:#E3F0ED; --ember:#C2410C; --ember-dim:#FBEAE1;
+    --shadow:0 1px 2px rgba(20,24,28,.05),0 1px 8px rgba(20,24,28,.04);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%;line-height:1.4;}
+  .wrap{max-width:640px;margin:0 auto;padding:0 14px calc(40px + env(safe-area-inset-bottom));}
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:rgba(250,250,248,.92);
+    backdrop-filter:saturate(150%) blur(10px);-webkit-backdrop-filter:saturate(150%) blur(10px);
+    border-bottom:1px solid var(--line);padding-top:calc(12px + env(safe-area-inset-top));}
+  .hd{max-width:640px;margin:0 auto;padding:0 14px 10px;}
+  h1{font-size:19px;letter-spacing:-.01em;margin:0 0 2px;font-weight:700;}
+  .sub{font-size:12.5px;color:var(--slate);margin:0 0 10px;font-variant-numeric:tabular-nums;}
+  .sub b{color:var(--ember);font-weight:700;}
+  .search{width:100%;font-size:16px;padding:11px 13px;border:1px solid var(--line);
+    border-radius:11px;background:var(--card);color:var(--ink);box-shadow:var(--shadow);}
+  .search:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:transparent;}
+  .chips{display:flex;gap:7px;overflow-x:auto;padding:11px 0 3px;scrollbar-width:none;-ms-overflow-style:none;}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;font-size:13px;font-weight:600;padding:7px 13px;border-radius:999px;
+    border:1px solid var(--line);background:var(--card);color:var(--slate);cursor:pointer;white-space:nowrap;}
+  .chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .chip.hot[aria-pressed="true"]{background:var(--ember);border-color:var(--ember);}
+  /* list */
+  ul{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;}
+  li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;
+    box-shadow:var(--shadow);}
+  li.hot{border-left:4px solid var(--ember);}
+  .row1{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+  .name{font-size:15.5px;font-weight:650;letter-spacing:-.01em;text-wrap:balance;margin:0;}
+  .rank{color:var(--faint);font-weight:600;font-variant-numeric:tabular-nums;}
+  .badge{flex:0 0 auto;font-size:11.5px;font-weight:700;padding:4px 9px;border-radius:999px;
+    white-space:nowrap;font-variant-numeric:tabular-nums;}
+  .badge.zero{background:var(--ember-dim);color:var(--ember);}
+  .badge.rev{background:#F1F2F0;color:var(--slate);}
+  .meta{font-size:13px;color:var(--slate);margin:5px 0 0;}
+  .meta .dot{color:var(--faint);padding:0 5px;}
+  .acts{display:flex;gap:9px;margin-top:12px;}
+  .acts a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;
+    min-height:48px;border-radius:11px;text-decoration:none;font-size:14.5px;font-weight:650;}
+  .msg{background:var(--teal);color:#fff;}
+  .msg:active{background:#0A6152;}
+  .wa{background:#EAF9F0;color:#128C3E;border:1px solid #BFE9CE;}
+  .wa:active{background:#D8F3E3;}
+  .acts a svg{width:18px;height:18px}
+  .maps-lnk{display:inline-flex;align-items:center;gap:5px;margin-top:11px;
+    font-size:12.5px;color:var(--slate);text-decoration:none;font-weight:600;}
+  .maps-lnk svg{width:14px;height:14px}
+  .maps-lnk:active{color:var(--teal);}
+  .phone{font-variant-numeric:tabular-nums;letter-spacing:.01em}
+  .empty{text-align:center;color:var(--slate);padding:40px 10px;font-size:14px;}
+  .foot{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);
+    font-size:11.5px;color:var(--faint);line-height:1.55;}
+</style>
+
+<header>
+  <div class="hd">
+    <h1>Leads sem site · Orlando</h1>
+    <p class="sub"><span id="count">100</span> de 100 &nbsp;·&nbsp; <b id="zc">6</b> com 0 reviews 🔥</p>
+    <input id="q" class="search" type="search" inputmode="search" placeholder="Buscar nome, serviço ou cidade…" aria-label="Buscar">
+    <div class="chips" id="chips"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <ul id="list"></ul>
+  <div class="foot">
+    Todos sem site próprio no Google · telefone verificado · metrô de Orlando.<br>
+    🔥 = sem nota no Google (≈ 0 reviews, mais novo). Toque <b>Mensagem</b> ou <b>WhatsApp</b> — o texto já vem escrito, é só revisar e enviar. Nada é enviado sozinho.
+  </div>
+</div>
+
+<script>
+const L = [{"n":"Evans Pressure Washing","p":"(407) 832-8620","c":"St Cloud","s":"Cleaning service","r":null},{"n":"Joy’s handyman","p":"(407) 244-0798","c":"Apopka","s":"Interior construction contractor","r":null},{"n":"Mobile Mechanic ( Cheapest In Florida )","p":"(570) 703-3662","c":"Kissimmee","s":"Auto repair shop","r":null},{"n":"Ocoee Lawn Care","p":"(407) 565-7616","c":"Ocoee","s":"Lawn care service","r":null},{"n":"Sage’s Mobile Mechanic","p":"(407) 686-8800","c":"Kissimmee","s":"Mechanic","r":null},{"n":"TrueYard Mowing","p":"(407) 347-8777","c":"Ocoee","s":"Lawn care service","r":null},{"n":"JR Mobile Detailing Service","p":"(863) 317-1116","c":"Davenport","s":"Car detailing service","r":1},{"n":"The Pool Company USA","p":"(407) 448-5371","c":"St Cloud","s":"Pool cleaning service","r":1},{"n":"Trevor's Tree's And Much More","p":"(407) 722-4154","c":"Apopka","s":"Tree service","r":1},{"n":"WD's Mobile Mechanics","p":"(407) 544-4306","c":"Kissimmee","s":"Mechanic","r":3},{"n":"K & M Painting Services","p":"(407) 889-9924","c":"Apopka","s":"Painter","r":3.7},{"n":"Amazon tree care","p":"(321) 594-0120","c":"Apopka","s":"Tree service","r":4},{"n":"Skinners Tree Service St. Cloud","p":"(407) 608-9160","c":"St Cloud","s":"Tree service","r":4.1},{"n":"Cam’s Diesel Center","p":"(689) 698-1500","c":"St Cloud","s":"Trucking company","r":4.3},{"n":"A & L Lawn Care Services LLC","p":"(786) 575-7550","c":"","s":"Lawn care service","r":4.4},{"n":"E & T Drywall & Painting LLC.","p":"(407) 415-8137","c":"Orlando","s":"Dry wall contractor","r":4.4},{"n":"Honey Do Handyman Services Inc","p":"(352) 973-7367","c":"Sorrento","s":"Handyman","r":4.4},{"n":"Kevin and Tony’s Mobile Auto Service","p":"(407) 715-1800","c":"Kissimmee","s":"Auto repair shop","r":4.4},{"n":"Affordable Painting & Handy Services LLC","p":"(689) 777-0597","c":"Apopka","s":"Handyman","r":4.5},{"n":"Blade Lawn Services","p":"(321) 437-1240","c":"Kissimmee","s":"Lawn care service","r":4.5},{"n":"Davenport Pool Service LLC","p":"(863) 557-4672","c":"","s":"Pool cleaning service","r":4.5},{"n":"Family N Landscaping & More","p":"(407) 693-4076","c":"St Cloud","s":"Lawn care service","r":4.6},{"n":"Grand Luxe Pool Service","p":"(321) 474-1760","c":"Davenport","s":"Pool cleaning service","r":4.6},{"n":"JOEL MOBILE MECHANIC","p":"(407) 508-1801","c":"Kissimmee","s":"Mechanic","r":4.6},{"n":"RPM Mobile Mechanic of Kissimmee","p":"(321) 730-2050","c":"Kissimmee","s":"Auto repair shop","r":4.6},{"n":"Chaviano Handyman, LLC","p":"(407) 686-6325","c":"Orlando","s":"Handyman","r":4.7},{"n":"Emrose Handyman Services LLC","p":"(321) 210-8338","c":"","s":"Handyman","r":4.7},{"n":"Keenan W Park","p":"(407) 687-6973","c":"Apopka","s":"Handyman","r":4.7},{"n":"Victor's Pool Service, LLC","p":"(689) 247-9045","c":"Kissimmee","s":"Pool cleaning service","r":4.7},{"n":"FDG Mobile Mechanic LLC","p":"(689) 200-5791","c":"","s":"Mechanic","r":4.8},{"n":"J&D Gutter Service","p":"(407) 577-5101","c":"","s":"Gutter cleaning service","r":4.8},{"n":"Tantan’s Mobile Mechanic","p":"(407) 486-4170","c":"","s":"Auto repair shop","r":4.8},{"n":"Wipe Out Washers Pressure Washing","p":"(407) 593-1925","c":"St Cloud","s":"Pressure washing service","r":4.8},{"n":"AAA&JAY MOBILE DETAILING SPA","p":"(321) 890-7736","c":"Orlando","s":"Car detailing service","r":4.9},{"n":"American Homes General Services","p":"(407) 369-0182","c":"Kissimmee","s":"Handyman","r":4.9},{"n":"Armstrong Mobile Detail II LLC","p":"(863) 270-5677","c":"Haines City","s":"Car detailing service","r":4.9},{"n":"Cano Mobile Auto Brake Repair FL Mobile Mechanic","p":"(689) 240-9530","c":"Kissimmee","s":"Mechanic","r":4.9},{"n":"Doctor Joe Mobile mechanic","p":"(321) 746-4220","c":"Kissimmee","s":"Mechanic","r":4.9},{"n":"Happy Bubbles Detailing","p":"(407) 663-2390","c":"Kissimmee","s":"Car detailing service","r":4.9},{"n":"IN AND OUT Mobile Detailing","p":"(407) 666-1023","c":"","s":"Car detailing service","r":4.9},{"n":"Tactical Tree","p":"(407) 361-1860","c":"","s":"Tree service","r":4.9},{"n":"Ruiz Remodeling and handyman services","p":"(386) 275-5853","c":"Kissimmee","s":"Remodeler","r":5},{"n":"A & J Elite Floors","p":"(407) 301-0837","c":"Kissimmee","s":"Contractor","r":5},{"n":"A Hauling Hand","p":"(407) 907-4910","c":"","s":"Junk removal service","r":5},{"n":"A&S mobile detailing","p":"(954) 696-9816","c":"","s":"Car detailing service","r":5},{"n":"A&Z Outdoors II, LLC","p":"(407) 914-3259","c":"Apopka","s":"Tree service","r":5},{"n":"AC Maintenance and Decor Handyman Services","p":"(407) 627-3496","c":"Kissimmee","s":"Handyman","r":5},{"n":"All About Grass------Can Do Services CFL","p":"(407) 989-9985","c":"Kissimmee","s":"Lawn care service","r":5},{"n":"All Star Lawn Care","p":"(407) 928-7757","c":"St Cloud","s":"Lawn care service","r":5},{"n":"Andrews Handy Services","p":"(407) 480-7962","c":"Apopka","s":"Handyman","r":5},{"n":"Armor Mobile Mechanic","p":"(407) 286-8782","c":"Kissimmee","s":"Auto repair shop","r":5},{"n":"AXELL CUBAN FENCE SERVICES LLC","p":"(352) 321-0049","c":"","s":"Home builder","r":5},{"n":"Baba Handyman","p":"(321) 900-3950","c":"Kissimmee","s":"Handyman","r":5},{"n":"Baruch Handyman & Cleaning","p":"(754) 366-9493","c":"Kissimmee","s":"Contractor","r":5},{"n":"Becerril’s Lawn & Landscaping services LLC","p":"(321) 442-7642","c":"Winter Garden","s":"Lawn care service","r":5},{"n":"Bk Landscaping","p":"(407) 393-0467","c":"St Cloud","s":"Lawn care service","r":5},{"n":"Blu Springs Pool Service LLC","p":"(786) 716-1986","c":"Davenport","s":"Pool cleaning service","r":5},{"n":"Champions Tree Service","p":"(407) 900-0763","c":"Kissimmee","s":"Tree service","r":5},{"n":"Chanza Wash Service","p":"(407) 498-6330","c":"Sanford","s":"Pressure washing service","r":5},{"n":"Chico's Express Movers","p":"(407) 449-0968","c":"","s":"Mover","r":5},{"n":"Clayton Handyman","p":"(201) 394-8421","c":"","s":"Handyman","r":5},{"n":"Clean pressure washing","p":"(407) 496-8421","c":"Clermont","s":"Pressure washing service","r":5},{"n":"Clover Clean Soft Washing & Pressure Cleaning","p":"(407) 785-4117","c":"St Cloud","s":"Pressure washing service","r":5},{"n":"Crystal Softwash Solutions LLC","p":"(407) 635-6038","c":"","s":"Pressure washing service","r":5},{"n":"Cut Rite Lawn Care","p":"(407) 877-9931","c":"Ocoee","s":"Landscaper","r":5},{"n":"Cypress Outdoor Services Inc","p":"(321) 310-4533","c":"Winter Garden","s":"Landscaper","r":5},{"n":"D&A Lawn Care and Outdoor solutions llc","p":"(407) 978-0216","c":"","s":"Lawn care service","r":5},{"n":"D&G MOBILE MECHANIC AND ROADSIDE SERVICE","p":"(832) 547-0606","c":"","s":"Mechanic","r":5},{"n":"Donald Fitzgerald Painting","p":"(407) 957-8028","c":"St Cloud","s":"Painter","r":5},{"n":"Epoxy Hard Floor LLC","p":"(407) 824-8142","c":"Kissimmee","s":"Flooring contractor","r":5},{"n":"ESPC FENCE LLC","p":"(321) 276-8258","c":"","s":"Home builder","r":5},{"n":"Fuster Mobile Car Detailing","p":"(407) 686-4444","c":"Kissimmee","s":"Car detailing service","r":5},{"n":"Good Vibes Mobile Detailing LLC","p":"(352) 225-8887","c":"Clermont","s":"Car detailing service","r":5},{"n":"High Seas Handyman & Services","p":"(321) 277-8932","c":"","s":"Handyman","r":5},{"n":"Home Repairs | Kissimmee Handyman","p":"(855) 888-8670","c":"St Cloud","s":"Handyman","r":5},{"n":"Home to Home Mobile Detailing","p":"(689) 332-8370","c":"","s":"Car detailing service","r":5},{"n":"I&B Team Pool Services Kissimmee","p":"(407) 519-3311","c":"Kissimmee","s":"Pool cleaning service","r":5},{"n":"Jmdz Painting and Drywall LLC","p":"(305) 924-2494","c":"Kissimmee","s":"Home builder","r":5},{"n":"Joshy247handymanSolutionsLLC","p":"(689) 322-7590","c":"Kissimmee","s":"Handyman","r":5},{"n":"K&O Pressure Washing Services LLC","p":"(689) 296-6300","c":"St Cloud","s":"Property maintenance","r":5},{"n":"Kissimmee Tree Service and Removal","p":"(407) 632-4748","c":"","s":"Tree service","r":5},{"n":"LAWN CARE","p":"(850) 928-8661","c":"Kissimmee","s":"Lawn care service","r":5},{"n":"LL Epoxy Flooring, LLC","p":"(321) 444-8977","c":"","s":"Flooring contractor","r":5},{"n":"Lt handyman service inc","p":"(407) 709-5745","c":"","s":"Carpenter","r":5},{"n":"M5 MOBILE DETAILING LLC","p":"(863) 419-5928","c":"Davenport","s":"Car detailing service","r":5},{"n":"Mahalo Flooring LLC","p":"(321) 444-2442","c":"Orlando","s":"Flooring contractor","r":5},{"n":"Metro Pulse Guttering’s Experts","p":"(407) 368-9888","c":"Orlando","s":"Gutter service","r":5},{"n":"Mr. & Mrs. Handy Services LLC","p":"(321) 948-4890","c":"","s":"Handyman","r":5},{"n":"N&J Pool Services","p":"(407) 495-9861","c":"Davenport","s":"Pool cleaning service","r":5},{"n":"On Point Mobile Car Detailing in Celebration","p":"(689) 224-7633","c":"Kissimmee","s":"Car detailing service","r":5},{"n":"Orlando Drywall repair","p":"(407) 815-5301","c":"Orlando","s":"Dry wall contractor","r":5},{"n":"Orlando Grout Cleaning","p":"(321) 314-1308","c":"","s":"Building restoration service","r":5},{"n":"Poinciana handyman service","p":"(478) 978-2511","c":"","s":"Handyman","r":5},{"n":"Pool Choice","p":"(305) 560-8334","c":"Kissimmee","s":"Pool cleaning service","r":5},{"n":"Prime Shine Mobile Auto Detailing","p":"(954) 955-9225","c":"Kissimmee","s":"Car detailing service","r":5},{"n":"QJ foam&shine mobile detailing","p":"(863) 535-9705","c":"Haines City","s":"Car detailing service","r":5},{"n":"QuickFix Handyman","p":"(248) 315-3826","c":"","s":"Custom home builder","r":5},{"n":"Real HD Cleaning LLC.","p":"(407) 274-5550","c":"Orlando","s":"Window cleaning service","r":5},{"n":"Riley's Drywall Service, INC.","p":"(407) 270-4686","c":"Orlando","s":"Dry wall contractor","r":5},{"n":"SJ Viana Landscape","p":"(407) 463-8125","c":"Winter Garden","s":"Gardener","r":5}];
+
+const NICHES = [
+  ["all","Todos",()=>true],
+  ["zero","🔥 0 reviews",l=>l.r==null],
+  ["Handyman","Handyman",l=>/handy|carpenter|remodel/i.test(l.s)],
+  ["Detailing","Detailing",l=>/detail/i.test(l.s)],
+  ["Lawn","Lawn/Yard",l=>/lawn|landscap|gardener/i.test(l.s)],
+  ["Pool","Pool",l=>/pool/i.test(l.s)],
+  ["Mechanic","Mecânico",l=>/mechanic|auto repair/i.test(l.s)],
+  ["Tree","Árvore",l=>/tree/i.test(l.s)],
+  ["Wash","Pressure wash",l=>/wash|window clean/i.test(l.s)],
+  ["Floor","Piso/Drywall",l=>/floor|dry wall|drywall|grout|restoration/i.test(l.s)],
+];
+
+let activeFilter = NICHES[0];
+let query = "";
+
+const svgMsg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7a8.5 8.5 0 0 1-.9-3.8A8.38 8.38 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg>';
+const svgPin = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+
+const digits = p => p.replace(/\D/g,"");
+// texto já pronto — humano revisa e envia. Nada dispara sozinho.
+const body = l => { const where=l.c?` in ${l.c}`:""; return `Hi! Came across ${l.n} on Google for ${l.s.toLowerCase()}${where} — looks like there's no website yet. I build clean, simple sites for Orlando home-service pros. Want a free demo of what yours could look like? No pressure.`; };
+const sms  = l => `sms:+1${digits(l.p)}?&body=${encodeURIComponent(body(l))}`;
+const wa   = l => `https://wa.me/1${digits(l.p)}?text=${encodeURIComponent(body(l))}`;
+const maps = l => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(l.n + " " + l.c + " FL");
+
+const listEl = document.getElementById("list");
+const countEl = document.getElementById("count");
+
+function render(){
+  const rows = L.filter(l => activeFilter[2](l) && matchQ(l));
+  countEl.textContent = rows.length;
+  listEl.textContent = "";
+  if(!rows.length){
+    const d=document.createElement("div"); d.className="empty"; d.textContent="Nenhum lead com esse filtro.";
+    listEl.appendChild(d); return;
+  }
+  rows.forEach((l,i)=>{
+    const zero = l.r==null;
+    const li=document.createElement("li"); if(zero) li.className="hot";
+    // row1
+    const r1=document.createElement("div"); r1.className="row1";
+    const name=document.createElement("p"); name.className="name";
+    const rk=document.createElement("span"); rk.className="rank"; rk.textContent=(i+1)+". ";
+    name.appendChild(rk); name.appendChild(document.createTextNode(l.n));
+    const badge=document.createElement("span");
+    badge.className="badge "+(zero?"zero":"rev");
+    badge.textContent = zero ? "0 rev 🔥" : l.r+"★";
+    r1.appendChild(name); r1.appendChild(badge);
+    // meta
+    const meta=document.createElement("p"); meta.className="meta";
+    meta.appendChild(document.createTextNode(l.s));
+    if(l.c){ const dot=document.createElement("span"); dot.className="dot"; dot.textContent="·"; meta.appendChild(dot); meta.appendChild(document.createTextNode(l.c)); }
+    const dot2=document.createElement("span"); dot2.className="dot"; dot2.textContent="·"; meta.appendChild(dot2);
+    const ph=document.createElement("span"); ph.className="phone"; ph.textContent=l.p; meta.appendChild(ph);
+    // actions — mensagem (SMS) + WhatsApp, texto pré-preenchido
+    const acts=document.createElement("div"); acts.className="acts";
+    const sm=document.createElement("a"); sm.className="msg"; sm.href=sms(l);
+    sm.innerHTML=svgMsg; sm.appendChild(document.createTextNode("Mensagem"));
+    const w=document.createElement("a"); w.className="wa"; w.href=wa(l); w.target="_blank"; w.rel="noopener";
+    w.innerHTML=svgMsg; w.appendChild(document.createTextNode("WhatsApp"));
+    acts.appendChild(sm); acts.appendChild(w);
+    const mp=document.createElement("a"); mp.className="maps-lnk"; mp.href=maps(l); mp.target="_blank"; mp.rel="noopener";
+    mp.innerHTML=svgPin; mp.appendChild(document.createTextNode("Ver no Google Maps"));
+    li.appendChild(r1); li.appendChild(meta); li.appendChild(acts); li.appendChild(mp);
+    listEl.appendChild(li);
+  });
+}
+function matchQ(l){
+  if(!query) return true;
+  return (l.n+" "+l.s+" "+l.c).toLowerCase().includes(query);
+}
+
+// chips
+const chipsEl=document.getElementById("chips");
+NICHES.forEach((nz,idx)=>{
+  const b=document.createElement("button");
+  b.className="chip"+(nz[0]==="zero"?" hot":"");
+  b.textContent=nz[1]; b.setAttribute("aria-pressed", idx===0?"true":"false");
+  b.onclick=()=>{ activeFilter=nz; [...chipsEl.children].forEach(c=>c.setAttribute("aria-pressed","false")); b.setAttribute("aria-pressed","true"); render(); };
+  chipsEl.appendChild(b);
+});
+document.getElementById("q").addEventListener("input",e=>{ query=e.target.value.trim().toLowerCase(); render(); });
+render();
+</script>
+
+</body></html>
