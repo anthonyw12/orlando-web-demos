@@ -87,7 +87,7 @@ const svgMsg='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
 const svgPin='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>';
 const digits=p=>p.replace(/\D/g,"");
 const demoUrl=l=>VIDEO+l.id+".html";
-const body=l=>`Hi! Made you a quick website preview for ${l.n} 👀 ${demoUrl(l)} — what do you think?`;
+const body=l=>`Hi! I build websites for local Orlando businesses and made a free one for ${l.n} 👇 ${demoUrl(l)} — want me to put it live?`;
 const sms=l=>`sms:+1${digits(l.p)}?&body=${encodeURIComponent(body(l))}`;
 const wa=l=>`https://wa.me/1${digits(l.p)}?text=${encodeURIComponent(body(l))}`;
 const maps=l=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(l.n+" "+l.c+" FL");
