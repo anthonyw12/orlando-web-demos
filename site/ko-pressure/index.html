@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K&amp;O Pressure Washing Services — Property maintenance in St Cloud, FL</title>
+<style>
+  :root{
+    --ink:#12161C; --slate:#4A5560; --faint:#8A94A0; --line:#E7E9EC;
+    --bg:#FBFBFA; --card:#FFFFFF;
+    --brand:#1F5C4C; --brand2:#2E8B6E; --brand-ink:#0C3A2E; --sand:#F2EFE7;
+    --gold:#E0A83E;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:440px;margin:0 auto;background:var(--bg);overflow:hidden}
+  /* header */
+  header{position:sticky;top:0;z-index:9;display:flex;align-items:center;justify-content:space-between;
+    padding:13px 18px;background:rgba(251,251,250,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .wm{font-weight:800;font-size:16px;letter-spacing:-.02em;color:var(--brand-ink);max-width:60vw;line-height:1.05;}
+  .wm b{color:var(--brand2)}
+  .hcall{font-size:13px;font-weight:700;color:#fff;background:var(--brand);padding:8px 13px;border-radius:9px;text-decoration:none;white-space:nowrap;}
+  /* hero */
+  .hero{position:relative;padding:40px 20px 34px;color:#fff;overflow:hidden;
+    background:linear-gradient(150deg,#14453A 0%,#1F5C4C 46%,#2E8B6E 100%);}
+  .hero::after{content:"";position:absolute;inset:0;opacity:.14;
+    background:radial-gradient(circle at 82% 12%,#fff 0,transparent 42%),radial-gradient(circle at 8% 96%,#fff 0,transparent 38%);}
+  .eyebrow{position:relative;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#BFE6D6;margin-bottom:14px;}
+  .hero h1{position:relative;font-size:33px;line-height:1.08;letter-spacing:-.025em;font-weight:800;text-wrap:balance;margin-bottom:12px;}
+  .hero p{position:relative;font-size:15px;color:#E4F2EC;max-width:34ch;margin-bottom:22px;}
+  .cta{position:relative;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;padding:13px 18px;border-radius:11px;text-decoration:none;}
+  .btn svg{width:17px;height:17px}
+  .btn-p{background:#fff;color:var(--brand-ink)}
+  .btn-s{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4)}
+  /* trust */
+  .trust{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;
+    padding:15px 18px;background:var(--brand-ink);color:#CFE7DD;font-size:12.5px;font-weight:600;}
+  .trust .st{color:var(--gold);letter-spacing:1px}
+  .trust b{color:#fff}
+  .trust .sep{width:4px;height:4px;border-radius:50%;background:#4C7A6B}
+  /* sections */
+  section{padding:38px 20px}
+  .kick{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand2);margin-bottom:9px;}
+  h2{font-size:23px;line-height:1.15;letter-spacing:-.02em;font-weight:800;margin-bottom:8px;text-wrap:balance;}
+  .lead{color:var(--slate);font-size:14.5px;margin-bottom:24px;max-width:36ch}
+  .cards{display:flex;flex-direction:column;gap:12px}
+  .c{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:16px 16px;}
+  .c .ic{flex:0 0 auto;width:42px;height:42px;border-radius:11px;background:var(--sand);display:flex;align-items:center;justify-content:center;}
+  .c .ic svg{width:21px;height:21px;stroke:var(--brand);fill:none;stroke-width:1.9}
+  .c h3{font-size:15.5px;font-weight:750;margin-bottom:3px}
+  .c p{font-size:13.5px;color:var(--slate);line-height:1.45}
+  /* band */
+  .band{background:var(--sand);border-radius:20px;margin:0 12px;padding:30px 22px;text-align:center}
+  .band h2{margin-bottom:6px}
+  .band p{color:var(--slate);font-size:14px;margin-bottom:20px}
+  /* reviews */
+  .rev{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:18px;margin-bottom:12px}
+  .rev .st{color:var(--gold);font-size:13px;letter-spacing:2px;margin-bottom:8px}
+  .rev p{font-size:14.5px;color:var(--ink);line-height:1.5;margin-bottom:10px}
+  .rev .who{font-size:12.5px;color:var(--faint);font-weight:600}
+  /* final cta */
+  .final{background:linear-gradient(150deg,#1F5C4C,#14453A);color:#fff;text-align:center;padding:44px 22px;margin-top:8px}
+  .final h2{color:#fff;margin-bottom:10px}
+  .final p{color:#D6EAE2;font-size:14.5px;margin-bottom:22px}
+  .final .phone{display:block;font-size:26px;font-weight:800;letter-spacing:-.01em;color:#fff;text-decoration:none;margin-bottom:20px;font-variant-numeric:tabular-nums}
+  footer{padding:22px 20px 34px;text-align:center;color:var(--faint);font-size:12px;background:var(--brand-ink)}
+  footer b{color:#CFE7DD;display:block;font-size:14px;margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="wm">K&amp;O Pressure Washing Services</div>
+    <a class="hcall" href="tel:+16892966300">Call now</a>
+  </header>
+
+  <div class="hero">
+    <div class="eyebrow">St Cloud, FL · Licensed &amp; Insured</div>
+    <h1>K&amp;O Pressure Washing Services</h1>
+    <p>Reliable property maintenance across St Cloud and Central Florida. Free estimates, honest pricing, work done right the first time.</p>
+    <div class="cta">
+      <a class="btn btn-p" href="tel:+16892966300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>Call (689) 296-6300</a>
+      <a class="btn btn-s" href="#quote">Free Quote</a>
+    </div>
+  </div>
+
+  <div class="trust">
+    <span><span class="st">★★★★★</span> <b>5.0</b> rated</span>
+    <span class="sep"></span><span>Locally owned</span>
+    <span class="sep"></span><span>Same-week service</span>
+  </div>
+
+  <section>
+    <div class="kick">Why choose us</div>
+    <h2>St Cloud's trusted choice for property maintenance</h2>
+    <p class="lead">Straight answers, fair prices, and a job done right — from a local team that treats your home like their own.</p>
+    <div class="cards">
+      <div class="c"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div><div><h3>Free, honest estimates</h3><p>No surprises. You get a clear quote up front before any work begins.</p></div></div>
+      <div class="c"><div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div><h3>Fast, reliable service</h3><p>Quick response and same-week scheduling across the St Cloud area.</p></div></div>
+      <div class="c"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><h3>Licensed &amp; insured</h3><p>Fully covered property maintenance you can trust, backed by a satisfaction guarantee.</p></div></div>
+    </div>
+  </section>
+
+  <section id="quote" style="padding-top:8px">
+    <div class="band">
+      <h2>Get your free quote today</h2>
+      <p>Tell us what you need — we'll get back to you fast with an honest price.</p>
+      <a class="btn btn-p" style="background:var(--brand);color:#fff" href="tel:+16892966300">Call or text (689) 296-6300</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="kick">Reviews</div>
+    <h2>Neighbors in St Cloud love the work</h2>
+    <div style="height:18px"></div>
+    <div class="rev"><div class="st">★★★★★</div><p>"Showed up on time, fair price, and the work was spotless. Finally a property maintenance pro I can count on."</p><div class="who">— Maria R., St Cloud</div></div>
+    <div class="rev"><div class="st">★★★★★</div><p>"Quick to respond and did a great job. Highly recommend to anyone in the area."</p><div class="who">— James T., Central FL</div></div>
+  </section>
+
+  <div class="final">
+    <h2>Ready when you are</h2>
+    <p>Serving St Cloud &amp; Central Florida · 7 days a week</p>
+    <a class="phone" href="tel:+16892966300">(689) 296-6300</a>
+    <a class="btn btn-p" href="tel:+16892966300">Call K&amp;O Pressure Washing Services</a>
+  </div>
+
+  <footer>
+    <b>K&amp;O Pressure Washing Services</b>
+    Property maintenance · St Cloud, FL · Licensed &amp; Insured<br>
+    © K&amp;O Pressure Washing Services. Serving Central Florida.
+  </footer>
+</div>
+</body>
+</html>
